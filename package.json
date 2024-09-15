@@ -1,7 +1,12 @@
 {
   "name": "pacman-game",
   "version": "1.0.0",
+  "description": "Pac-Man oyunu",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
