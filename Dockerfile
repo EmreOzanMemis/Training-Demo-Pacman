@@ -1,11 +1,11 @@
-# Base image olarak Nginx kullanıyoruz
+# Base image
 FROM nginx:alpine
 
-# Nginx yapılandırma dosyasını kopyala
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Uygulama dosyalarını kopyala
+# Copy the HTML and JavaScript files to the Nginx HTML directory
 COPY . /usr/share/nginx/html
 
-# Nginx çalıştır
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
