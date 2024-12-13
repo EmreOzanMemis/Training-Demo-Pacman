@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'pacmantest'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3DDB44C5578240BDA869D0BF449154A7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33E7E094CB9C451EAF5A8E939BB3CAF2 }}
           package: .
